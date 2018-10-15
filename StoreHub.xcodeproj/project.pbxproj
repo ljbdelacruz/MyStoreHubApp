@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6F5D5B93217417EE004A50A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5D5B92217417EE004A50A8 /* AppDelegate.swift */; };
-		6F5D5B95217417EE004A50A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5D5B94217417EE004A50A8 /* ViewController.swift */; };
+		6F5D5B95217417EE004A50A8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5D5B94217417EE004A50A8 /* LoginViewController.swift */; };
 		6F5D5B98217417EE004A50A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F5D5B96217417EE004A50A8 /* Main.storyboard */; };
 		6F5D5B9B217417EE004A50A8 /* StoreHub.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6F5D5B99217417EE004A50A8 /* StoreHub.xcdatamodeld */; };
 		6F5D5B9D217417EF004A50A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F5D5B9C217417EF004A50A8 /* Assets.xcassets */; };
@@ -17,13 +17,16 @@
 		6F5D5BB2217427E8004A50A8 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5D5BB1217427E8004A50A8 /* DashboardViewController.swift */; };
 		6F5D5BB621742CAC004A50A8 /* CustomCell1CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5D5BB421742CAC004A50A8 /* CustomCell1CollectionViewCell.swift */; };
 		6F5D5BB721742CAC004A50A8 /* CustomCell1CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F5D5BB521742CAC004A50A8 /* CustomCell1CollectionViewCell.xib */; };
+		6F5D5BBA217431CB004A50A8 /* FirebaseCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5D5BB8217431CB004A50A8 /* FirebaseCustom.swift */; };
+		6F5D5BBB217431CB004A50A8 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5D5BB9217431CB004A50A8 /* UserInfo.swift */; };
+		6F5D5BBE21743334004A50A8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6F5D5BBD21743334004A50A8 /* GoogleService-Info.plist */; };
 		D81B514102EE33423C752AF2 /* Pods_StoreHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63249111D5C3C2A5F1FDC58 /* Pods_StoreHub.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6F5D5B8F217417EE004A50A8 /* StoreHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoreHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F5D5B92217417EE004A50A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6F5D5B94217417EE004A50A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6F5D5B94217417EE004A50A8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6F5D5B97217417EE004A50A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6F5D5B9A217417EE004A50A8 /* StoreHub.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StoreHub.xcdatamodel; sourceTree = "<group>"; };
 		6F5D5B9C217417EF004A50A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -33,6 +36,9 @@
 		6F5D5BB1217427E8004A50A8 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		6F5D5BB421742CAC004A50A8 /* CustomCell1CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell1CollectionViewCell.swift; sourceTree = "<group>"; };
 		6F5D5BB521742CAC004A50A8 /* CustomCell1CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell1CollectionViewCell.xib; sourceTree = "<group>"; };
+		6F5D5BB8217431CB004A50A8 /* FirebaseCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseCustom.swift; sourceTree = "<group>"; };
+		6F5D5BB9217431CB004A50A8 /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		6F5D5BBD21743334004A50A8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		72A79E759EA11E3EE4181CCD /* Pods-StoreHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreHub.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StoreHub/Pods-StoreHub.debug.xcconfig"; sourceTree = "<group>"; };
 		B5CB320F2160930E89EB3373 /* Pods-StoreHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreHub.release.xcconfig"; path = "Pods/Target Support Files/Pods-StoreHub/Pods-StoreHub.release.xcconfig"; sourceTree = "<group>"; };
 		B63249111D5C3C2A5F1FDC58 /* Pods_StoreHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StoreHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +103,7 @@
 				6F5D5B9C217417EF004A50A8 /* Assets.xcassets */,
 				6F5D5B9E217417EF004A50A8 /* LaunchScreen.storyboard */,
 				6F5D5BA1217417EF004A50A8 /* Info.plist */,
+				6F5D5BBD21743334004A50A8 /* GoogleService-Info.plist */,
 				6F5D5B99217417EE004A50A8 /* StoreHub.xcdatamodeld */,
 			);
 			path = StoreHub;
@@ -105,7 +112,7 @@
 		6F5D5BA72174190D004A50A8 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				6F5D5B94217417EE004A50A8 /* ViewController.swift */,
+				6F5D5B94217417EE004A50A8 /* LoginViewController.swift */,
 				6F5D5BAC21742310004A50A8 /* SignupViewController.swift */,
 				6F5D5BB1217427E8004A50A8 /* DashboardViewController.swift */,
 			);
@@ -115,6 +122,8 @@
 		6F5D5BA821741919004A50A8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6F5D5BB8217431CB004A50A8 /* FirebaseCustom.swift */,
+				6F5D5BB9217431CB004A50A8 /* UserInfo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -130,7 +139,7 @@
 		6F5D5BAE2174251C004A50A8 /* CustomStyle */ = {
 			isa = PBXGroup;
 			children = (
-				6F5D5BB321742C81004A50A8 /* CustomCell1 */,
+				6F5D5BBC217431F6004A50A8 /* CollectionViewCell */,
 			);
 			path = CustomStyle;
 			sourceTree = "<group>";
@@ -149,6 +158,14 @@
 				6F5D5BB521742CAC004A50A8 /* CustomCell1CollectionViewCell.xib */,
 			);
 			path = CustomCell1;
+			sourceTree = "<group>";
+		};
+		6F5D5BBC217431F6004A50A8 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				6F5D5BB321742C81004A50A8 /* CustomCell1 */,
+			);
+			path = CollectionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +230,7 @@
 			files = (
 				6F5D5BA0217417EF004A50A8 /* LaunchScreen.storyboard in Resources */,
 				6F5D5B9D217417EF004A50A8 /* Assets.xcassets in Resources */,
+				6F5D5BBE21743334004A50A8 /* GoogleService-Info.plist in Resources */,
 				6F5D5B98217417EE004A50A8 /* Main.storyboard in Resources */,
 				6F5D5BB721742CAC004A50A8 /* CustomCell1CollectionViewCell.xib in Resources */,
 			);
@@ -280,7 +298,9 @@
 			files = (
 				6F5D5B9B217417EE004A50A8 /* StoreHub.xcdatamodeld in Sources */,
 				6F5D5BB621742CAC004A50A8 /* CustomCell1CollectionViewCell.swift in Sources */,
-				6F5D5B95217417EE004A50A8 /* ViewController.swift in Sources */,
+				6F5D5B95217417EE004A50A8 /* LoginViewController.swift in Sources */,
+				6F5D5BBA217431CB004A50A8 /* FirebaseCustom.swift in Sources */,
+				6F5D5BBB217431CB004A50A8 /* UserInfo.swift in Sources */,
 				6F5D5BB2217427E8004A50A8 /* DashboardViewController.swift in Sources */,
 				6F5D5BAD21742310004A50A8 /* SignupViewController.swift in Sources */,
 				6F5D5B93217417EE004A50A8 /* AppDelegate.swift in Sources */,

@@ -9,12 +9,14 @@
 import UIKit
 
 class DashboardViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
-
+    var fbCustom:FirebaseCustom?;
+    
     @IBOutlet weak var collectionView: UICollectionView!
-    var items=["1", "2", "3", "4","5", "6", "7", "8"];
+    var items=[1,2,3,4,5,6,7,8,9];
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -26,9 +28,11 @@ class DashboardViewController: UIViewController, UICollectionViewDelegate, UICol
         return 0;
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell=self.collectionView.dequeueReusableCell(withReuseIdentifier: "cell1", for: indexPath)
+        let cell=collectionView.dequeueReusableCell(withReuseIdentifier: "customCell1", for: indexPath) as! CustomCell1CollectionViewCell
+        cell.UIProduct.text! = ""+String(self.items[indexPath.row]);
         return cell;
     }
+    
     
     
     
