@@ -22,6 +22,7 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
     var fbCustom:FirebaseCustom?;
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.isNavigationBarHidden=false;
         // Do any additional setup after loading the view.
         self.fbCustom=FirebaseCustom();
         //
@@ -62,7 +63,7 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "signupToDashboard"{
-            let destVC=segue.destination as! LoginViewController;
+            let destVC=segue.destination as! DashboardViewController;
             destVC.fbCustom=self.fbCustom!;
         }
     }

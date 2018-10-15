@@ -29,6 +29,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func OnLoginClick(_ sender: Any) {
+        self.fbCustom.userInfo?.Email=self.UIEmail.text!;
+        self.fbCustom.userInfo?.Password=self.UIPassword.text!;
         SVProgressHUD.show();
         self.fbCustom.AuthUser(completionHandler: {
             (response, error) in

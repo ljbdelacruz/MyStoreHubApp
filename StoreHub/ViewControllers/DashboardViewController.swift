@@ -16,7 +16,7 @@ class DashboardViewController: UIViewController, UICollectionViewDelegate, UICol
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        self.navigationController?.isNavigationBarHidden=true;
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -25,7 +25,7 @@ class DashboardViewController: UIViewController, UICollectionViewDelegate, UICol
     
     //collection view
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0;
+        return self.items.count;
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell=collectionView.dequeueReusableCell(withReuseIdentifier: "customCell1", for: indexPath) as! CustomCell1CollectionViewCell
