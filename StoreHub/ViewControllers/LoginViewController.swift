@@ -22,15 +22,15 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         self.UIEmail.delegate=self;
         self.UIPassword.delegate=self;
+        self.UIError.alpha=0;
+        self.UIDoneBtn.alpha=0;
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     @IBAction func OnLoginClick(_ sender: Any) {
-        self.fbCustom.userInfo?.Email=self.UIEmail.text!;
-        self.fbCustom.userInfo?.Password=self.UIPassword.text!;
+        self.fbCustom.userInfo?.set(email: self.UIEmail.text!, pass: self.UIPassword.text!, fname: "", lname: "")
         SVProgressHUD.show();
         self.fbCustom.AuthUser(completionHandler: {
             (response, error) in

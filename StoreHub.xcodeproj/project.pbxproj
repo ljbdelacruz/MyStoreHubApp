@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		6F5D5B93217417EE004A50A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5D5B92217417EE004A50A8 /* AppDelegate.swift */; };
 		6F5D5B95217417EE004A50A8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5D5B94217417EE004A50A8 /* LoginViewController.swift */; };
-		6F5D5B98217417EE004A50A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F5D5B96217417EE004A50A8 /* Main.storyboard */; };
 		6F5D5B9B217417EE004A50A8 /* StoreHub.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6F5D5B99217417EE004A50A8 /* StoreHub.xcdatamodeld */; };
 		6F5D5B9D217417EF004A50A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F5D5B9C217417EF004A50A8 /* Assets.xcassets */; };
 		6F5D5BA0217417EF004A50A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F5D5B9E217417EF004A50A8 /* LaunchScreen.storyboard */; };
@@ -21,14 +20,290 @@
 		6F5D5BBB217431CB004A50A8 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5D5BB9217431CB004A50A8 /* UserInfo.swift */; };
 		6F5D5BBE21743334004A50A8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6F5D5BBD21743334004A50A8 /* GoogleService-Info.plist */; };
 		6F5D5BC021744CA4004A50A8 /* StoreListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5D5BBF21744CA4004A50A8 /* StoreListViewController.swift */; };
-		D81B514102EE33423C752AF2 /* Pods_StoreHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63249111D5C3C2A5F1FDC58 /* Pods_StoreHub.framework */; };
+		6F5D5BC221744E39004A50A8 /* ModifyStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5D5BC121744E39004A50A8 /* ModifyStoreViewController.swift */; };
+		6F5D5BC42174500A004A50A8 /* Merchant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5D5BC32174500A004A50A8 /* Merchant.swift */; };
+		6F5D5BC721745168004A50A8 /* Geolocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5D5BC621745168004A50A8 /* Geolocation.swift */; };
+		6F5D5BCB21745A65004A50A8 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5D5BCA21745A65004A50A8 /* Category.swift */; };
+		6F5D5BCF21751ADB004A50A8 /* FindMerchantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5D5BCE21751ADB004A50A8 /* FindMerchantViewController.swift */; };
+		6F5D5BD121751F9E004A50A8 /* StoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5D5BD021751F9E004A50A8 /* StoreInfoViewController.swift */; };
+		6FEEB71B21753F270002DA1D /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 6FEEB71A21753F260002DA1D /* tessdata */; };
+		6FEEB85C217557240002DA1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FEEB85B217557240002DA1D /* Main.storyboard */; };
+		77B201D81845D81CF77EA6E8 /* Pods_StoreHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63249111D5C3C2A5F1FDC58 /* Pods_StoreHub.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6FEEB78C217550060002DA1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FEEB77D217550050002DA1D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 52EC8FAD22C49DFA78F800E6033CFCBF;
+			remoteInfo = Alamofire;
+		};
+		6FEEB78E217550060002DA1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FEEB77D217550050002DA1D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B5B6DA1FA572A7D6197B5AF3CFED02A;
+			remoteInfo = ChameleonFramework;
+		};
+		6FEEB790217550060002DA1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FEEB77D217550050002DA1D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 92BD1A397165BD9FFFA6227993300D29;
+			remoteInfo = FirebaseAuth;
+		};
+		6FEEB792217550060002DA1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FEEB77D217550050002DA1D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 805BB5042D4D8499071C9B3206A64E71;
+			remoteInfo = FirebaseCore;
+		};
+		6FEEB794217550060002DA1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FEEB77D217550050002DA1D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3809D37809C5761700F090032B6824A2;
+			remoteInfo = FirebaseDatabase;
+		};
+		6FEEB796217550060002DA1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FEEB77D217550050002DA1D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 127B42053F6A5CFD8879CAACEB181034;
+			remoteInfo = GoogleUtilities;
+		};
+		6FEEB798217550060002DA1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FEEB77D217550050002DA1D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DD7428FA81B6D5DA7A454C8AA9C6F0F6;
+			remoteInfo = GTMSessionFetcher;
+		};
+		6FEEB79A217550060002DA1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FEEB77D217550050002DA1D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9E685A5C053C03644B48F3C0DA58CDBF;
+			remoteInfo = "leveldb-library";
+		};
+		6FEEB79C217550060002DA1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FEEB77D217550050002DA1D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2B40F9ACC02BD4F888B11CA03AE45B7F;
+			remoteInfo = nanopb;
+		};
+		6FEEB79E217550060002DA1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FEEB77D217550050002DA1D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CCB6B450EF1B17D20A0AD6F84840056E;
+			remoteInfo = "Pods-SimpleChatMessaging";
+		};
+		6FEEB7A0217550060002DA1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FEEB77D217550050002DA1D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 258FE5EEF1A8F2455530A598808A3B54;
+			remoteInfo = SVProgressHUD;
+		};
+		6FEEB7A2217550060002DA1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FEEB77D217550050002DA1D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FE94BCE0A912F26EA22A389C210EC7E8;
+			remoteInfo = SwiftyJSON;
+		};
+		6FEEB841217556910002DA1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FEEB831217556910002DA1D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CF11C65B2AB2917764FB07B6D202BBF9;
+			remoteInfo = Alamofire;
+		};
+		6FEEB843217556910002DA1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FEEB831217556910002DA1D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3610A217F381936309CD3F846AA81C27;
+			remoteInfo = ChameleonFramework;
+		};
+		6FEEB845217556910002DA1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FEEB831217556910002DA1D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0C10ACB5156D38AE4CFBC16A539DEA3F;
+			remoteInfo = FirebaseAuth;
+		};
+		6FEEB847217556910002DA1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FEEB831217556910002DA1D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2F622A3F3497C65F20115BF34BA44E7F;
+			remoteInfo = FirebaseCore;
+		};
+		6FEEB849217556910002DA1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FEEB831217556910002DA1D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4500B27B417E37D6EB553DDD949D1E0A;
+			remoteInfo = FirebaseDatabase;
+		};
+		6FEEB84B217556910002DA1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FEEB831217556910002DA1D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F1C93E0BDA5516DABDC6F9CA3F128A5;
+			remoteInfo = GoogleUtilities;
+		};
+		6FEEB84D217556910002DA1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FEEB831217556910002DA1D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65039F987F5C7E50CAA8F35228891504;
+			remoteInfo = GTMSessionFetcher;
+		};
+		6FEEB84F217556910002DA1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FEEB831217556910002DA1D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F51C3302B3B8A78C6107385404B9C6D;
+			remoteInfo = "leveldb-library";
+		};
+		6FEEB851217556910002DA1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FEEB831217556910002DA1D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FEFFC49165565E53917367B0D563FC29;
+			remoteInfo = nanopb;
+		};
+		6FEEB853217556910002DA1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FEEB831217556910002DA1D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 44AF3FCE3875576EA5412885B857444C;
+			remoteInfo = "Pods-StoreHub";
+		};
+		6FEEB855217556910002DA1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FEEB831217556910002DA1D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0553BC4BC194D7430C8F0F74997BC642;
+			remoteInfo = SVProgressHUD;
+		};
+		6FEEB857217556910002DA1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FEEB831217556910002DA1D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 833C2D972D14EEE0E373ABD6E51F1751;
+			remoteInfo = SwiftyJSON;
+		};
+		6FEEB859217556910002DA1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FEEB831217556910002DA1D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CDD489FEB4181CDDFD0E69D50C148CA6;
+			remoteInfo = TesseractOCRiOS;
+		};
+		6FEEB86D21755D2C0002DA1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FEEB85D21755D2C0002DA1D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CF11C65B2AB2917764FB07B6D202BBF9;
+			remoteInfo = Alamofire;
+		};
+		6FEEB86F21755D2C0002DA1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FEEB85D21755D2C0002DA1D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3610A217F381936309CD3F846AA81C27;
+			remoteInfo = ChameleonFramework;
+		};
+		6FEEB87121755D2C0002DA1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FEEB85D21755D2C0002DA1D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0C10ACB5156D38AE4CFBC16A539DEA3F;
+			remoteInfo = FirebaseAuth;
+		};
+		6FEEB87321755D2C0002DA1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FEEB85D21755D2C0002DA1D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2F622A3F3497C65F20115BF34BA44E7F;
+			remoteInfo = FirebaseCore;
+		};
+		6FEEB87521755D2C0002DA1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FEEB85D21755D2C0002DA1D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4500B27B417E37D6EB553DDD949D1E0A;
+			remoteInfo = FirebaseDatabase;
+		};
+		6FEEB87721755D2C0002DA1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FEEB85D21755D2C0002DA1D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F1C93E0BDA5516DABDC6F9CA3F128A5;
+			remoteInfo = GoogleUtilities;
+		};
+		6FEEB87921755D2C0002DA1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FEEB85D21755D2C0002DA1D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65039F987F5C7E50CAA8F35228891504;
+			remoteInfo = GTMSessionFetcher;
+		};
+		6FEEB87B21755D2C0002DA1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FEEB85D21755D2C0002DA1D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F51C3302B3B8A78C6107385404B9C6D;
+			remoteInfo = "leveldb-library";
+		};
+		6FEEB87D21755D2C0002DA1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FEEB85D21755D2C0002DA1D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FEFFC49165565E53917367B0D563FC29;
+			remoteInfo = nanopb;
+		};
+		6FEEB87F21755D2C0002DA1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FEEB85D21755D2C0002DA1D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 44AF3FCE3875576EA5412885B857444C;
+			remoteInfo = "Pods-StoreHub";
+		};
+		6FEEB88121755D2C0002DA1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FEEB85D21755D2C0002DA1D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0553BC4BC194D7430C8F0F74997BC642;
+			remoteInfo = SVProgressHUD;
+		};
+		6FEEB88321755D2C0002DA1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FEEB85D21755D2C0002DA1D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 833C2D972D14EEE0E373ABD6E51F1751;
+			remoteInfo = SwiftyJSON;
+		};
+		6FEEB88521755D2C0002DA1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FEEB85D21755D2C0002DA1D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CDD489FEB4181CDDFD0E69D50C148CA6;
+			remoteInfo = TesseractOCRiOS;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6F5D5B8F217417EE004A50A8 /* StoreHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoreHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F5D5B92217417EE004A50A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F5D5B94217417EE004A50A8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		6F5D5B97217417EE004A50A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6F5D5B9A217417EE004A50A8 /* StoreHub.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StoreHub.xcdatamodel; sourceTree = "<group>"; };
 		6F5D5B9C217417EF004A50A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F5D5B9F217417EF004A50A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -41,6 +316,45 @@
 		6F5D5BB9217431CB004A50A8 /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		6F5D5BBD21743334004A50A8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6F5D5BBF21744CA4004A50A8 /* StoreListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreListViewController.swift; sourceTree = "<group>"; };
+		6F5D5BC121744E39004A50A8 /* ModifyStoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyStoreViewController.swift; sourceTree = "<group>"; };
+		6F5D5BC32174500A004A50A8 /* Merchant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Merchant.swift; sourceTree = "<group>"; };
+		6F5D5BC621745168004A50A8 /* Geolocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geolocation.swift; sourceTree = "<group>"; };
+		6F5D5BCA21745A65004A50A8 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		6F5D5BCE21751ADB004A50A8 /* FindMerchantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMerchantViewController.swift; sourceTree = "<group>"; };
+		6F5D5BD021751F9E004A50A8 /* StoreInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreInfoViewController.swift; sourceTree = "<group>"; };
+		6F5D5BF82175367D004A50A8 /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
+		6F5D5BFC217536A4004A50A8 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		6FEEB71A21753F260002DA1D /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		6FEEB7322175412A0002DA1D /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		6FEEB77D217550050002DA1D /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = ../../../Swift/Mobile/IOSSimpleChatApp/SimpleChatMessaging/Pods/Pods.xcodeproj; sourceTree = "<group>"; };
+		6FEEB7A4217550F60002DA1D /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FEEB7A6217550F60002DA1D /* ChameleonFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ChameleonFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FEEB7A8217550F60002DA1D /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FEEB7AA217550F60002DA1D /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FEEB7AC217550F60002DA1D /* FirebaseDatabase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseDatabase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FEEB7AE217550F60002DA1D /* GoogleUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FEEB7B0217550F60002DA1D /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GTMSessionFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FEEB7B2217550F60002DA1D /* leveldb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = leveldb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FEEB7B4217550F60002DA1D /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FEEB7B6217550F60002DA1D /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FEEB7B8217550F60002DA1D /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FEEB7BA217550F60002DA1D /* TesseractOCR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FEEB7C82175516A0002DA1D /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FEEB7CA217551710002DA1D /* ChameleonFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ChameleonFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FEEB805217556020002DA1D /* ChameleonFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ChameleonFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FEEB807217556020002DA1D /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FEEB809217556020002DA1D /* FirebaseDatabase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseDatabase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FEEB80B217556020002DA1D /* GoogleUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FEEB80D217556020002DA1D /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GTMSessionFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FEEB80F217556020002DA1D /* leveldb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = leveldb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FEEB811217556020002DA1D /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FEEB813217556020002DA1D /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FEEB815217556020002DA1D /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FEEB817217556020002DA1D /* TesseractOCR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FEEB82F2175566F0002DA1D /* StoreHub */ = {isa = PBXFileReference; lastKnownFileType = folder; path = StoreHub; sourceTree = "<group>"; };
+		6FEEB831217556910002DA1D /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
+		6FEEB85B217557240002DA1D /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		6FEEB85D21755D2C0002DA1D /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		72A79E759EA11E3EE4181CCD /* Pods-StoreHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreHub.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StoreHub/Pods-StoreHub.debug.xcconfig"; sourceTree = "<group>"; };
 		B5CB320F2160930E89EB3373 /* Pods-StoreHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreHub.release.xcconfig"; path = "Pods/Target Support Files/Pods-StoreHub/Pods-StoreHub.release.xcconfig"; sourceTree = "<group>"; };
 		B63249111D5C3C2A5F1FDC58 /* Pods_StoreHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StoreHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,7 +365,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D81B514102EE33423C752AF2 /* Pods_StoreHub.framework in Frameworks */,
+				77B201D81845D81CF77EA6E8 /* Pods_StoreHub.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +384,35 @@
 		46644C63BCCFEB4ED4D58755 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6FEEB831217556910002DA1D /* Pods.xcodeproj */,
+				6FEEB82F2175566F0002DA1D /* StoreHub */,
+				6FEEB805217556020002DA1D /* ChameleonFramework.framework */,
+				6FEEB807217556020002DA1D /* FirebaseCore.framework */,
+				6FEEB809217556020002DA1D /* FirebaseDatabase.framework */,
+				6FEEB80B217556020002DA1D /* GoogleUtilities.framework */,
+				6FEEB80D217556020002DA1D /* GTMSessionFetcher.framework */,
+				6FEEB80F217556020002DA1D /* leveldb.framework */,
+				6FEEB811217556020002DA1D /* nanopb.framework */,
+				6FEEB813217556020002DA1D /* SVProgressHUD.framework */,
+				6FEEB815217556020002DA1D /* SwiftyJSON.framework */,
+				6FEEB817217556020002DA1D /* TesseractOCR.framework */,
+				6FEEB7CA217551710002DA1D /* ChameleonFramework.framework */,
+				6FEEB7C82175516A0002DA1D /* Alamofire.framework */,
+				6FEEB7A4217550F60002DA1D /* Alamofire.framework */,
+				6FEEB7A6217550F60002DA1D /* ChameleonFramework.framework */,
+				6FEEB7A8217550F60002DA1D /* FirebaseAuth.framework */,
+				6FEEB7AA217550F60002DA1D /* FirebaseCore.framework */,
+				6FEEB7AC217550F60002DA1D /* FirebaseDatabase.framework */,
+				6FEEB7AE217550F60002DA1D /* GoogleUtilities.framework */,
+				6FEEB7B0217550F60002DA1D /* GTMSessionFetcher.framework */,
+				6FEEB7B2217550F60002DA1D /* leveldb.framework */,
+				6FEEB7B4217550F60002DA1D /* nanopb.framework */,
+				6FEEB7B6217550F60002DA1D /* SVProgressHUD.framework */,
+				6FEEB7B8217550F60002DA1D /* SwiftyJSON.framework */,
+				6FEEB7BA217550F60002DA1D /* TesseractOCR.framework */,
+				6FEEB7322175412A0002DA1D /* libstdc++.tbd */,
+				6F5D5BFC217536A4004A50A8 /* CoreImage.framework */,
+				6F5D5BF82175367D004A50A8 /* libstdc++.6.tbd */,
 				B63249111D5C3C2A5F1FDC58 /* Pods_StoreHub.framework */,
 			);
 			name = Frameworks;
@@ -78,6 +421,8 @@
 		6F5D5B86217417EE004A50A8 = {
 			isa = PBXGroup;
 			children = (
+				6FEEB77D217550050002DA1D /* Pods.xcodeproj */,
+				6FEEB85D21755D2C0002DA1D /* Pods.xcodeproj */,
 				6F5D5B91217417EE004A50A8 /* StoreHub */,
 				6F5D5B90217417EE004A50A8 /* Products */,
 				291FA009BB2744B7F880F88C /* Pods */,
@@ -96,6 +441,7 @@
 		6F5D5B91217417EE004A50A8 /* StoreHub */ = {
 			isa = PBXGroup;
 			children = (
+				6FEEB71721753DE60002DA1D /* Supporting Files */,
 				6F5D5BAF217425CA004A50A8 /* Protocols */,
 				6F5D5BAE2174251C004A50A8 /* CustomStyle */,
 				6F5D5BA92174192E004A50A8 /* Views */,
@@ -118,6 +464,9 @@
 				6F5D5BAC21742310004A50A8 /* SignupViewController.swift */,
 				6F5D5BB1217427E8004A50A8 /* DashboardViewController.swift */,
 				6F5D5BBF21744CA4004A50A8 /* StoreListViewController.swift */,
+				6F5D5BC121744E39004A50A8 /* ModifyStoreViewController.swift */,
+				6F5D5BCE21751ADB004A50A8 /* FindMerchantViewController.swift */,
+				6F5D5BD021751F9E004A50A8 /* StoreInfoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -127,6 +476,9 @@
 			children = (
 				6F5D5BB8217431CB004A50A8 /* FirebaseCustom.swift */,
 				6F5D5BB9217431CB004A50A8 /* UserInfo.swift */,
+				6F5D5BC32174500A004A50A8 /* Merchant.swift */,
+				6F5D5BC621745168004A50A8 /* Geolocation.swift */,
+				6F5D5BCA21745A65004A50A8 /* Category.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -134,7 +486,7 @@
 		6F5D5BA92174192E004A50A8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				6F5D5B96217417EE004A50A8 /* Main.storyboard */,
+				6FEEB85B217557240002DA1D /* Main.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -142,6 +494,8 @@
 		6F5D5BAE2174251C004A50A8 /* CustomStyle */ = {
 			isa = PBXGroup;
 			children = (
+				6F5D5BD82175205C004A50A8 /* View */,
+				6F5D5BD221751FD2004A50A8 /* Images */,
 				6F5D5BBC217431F6004A50A8 /* CollectionViewCell */,
 			);
 			path = CustomStyle;
@@ -169,6 +523,87 @@
 				6F5D5BB321742C81004A50A8 /* CustomCell1 */,
 			);
 			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		6F5D5BD221751FD2004A50A8 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		6F5D5BD82175205C004A50A8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6FEEB71721753DE60002DA1D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6FEEB71A21753F260002DA1D /* tessdata */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6FEEB77E217550050002DA1D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6FEEB78D217550060002DA1D /* Alamofire.framework */,
+				6FEEB78F217550060002DA1D /* ChameleonFramework.framework */,
+				6FEEB791217550060002DA1D /* FirebaseAuth.framework */,
+				6FEEB793217550060002DA1D /* FirebaseCore.framework */,
+				6FEEB795217550060002DA1D /* FirebaseDatabase.framework */,
+				6FEEB797217550060002DA1D /* GoogleUtilities.framework */,
+				6FEEB799217550060002DA1D /* GTMSessionFetcher.framework */,
+				6FEEB79B217550060002DA1D /* leveldb.framework */,
+				6FEEB79D217550060002DA1D /* nanopb.framework */,
+				6FEEB79F217550060002DA1D /* Pods_SimpleChatMessaging.framework */,
+				6FEEB7A1217550060002DA1D /* SVProgressHUD.framework */,
+				6FEEB7A3217550060002DA1D /* SwiftyJSON.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6FEEB832217556910002DA1D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6FEEB842217556910002DA1D /* Alamofire.framework */,
+				6FEEB844217556910002DA1D /* ChameleonFramework.framework */,
+				6FEEB846217556910002DA1D /* FirebaseAuth.framework */,
+				6FEEB848217556910002DA1D /* FirebaseCore.framework */,
+				6FEEB84A217556910002DA1D /* FirebaseDatabase.framework */,
+				6FEEB84C217556910002DA1D /* GoogleUtilities.framework */,
+				6FEEB84E217556910002DA1D /* GTMSessionFetcher.framework */,
+				6FEEB850217556910002DA1D /* leveldb.framework */,
+				6FEEB852217556910002DA1D /* nanopb.framework */,
+				6FEEB854217556910002DA1D /* Pods_StoreHub.framework */,
+				6FEEB856217556910002DA1D /* SVProgressHUD.framework */,
+				6FEEB858217556910002DA1D /* SwiftyJSON.framework */,
+				6FEEB85A217556910002DA1D /* TesseractOCR.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6FEEB85E21755D2C0002DA1D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6FEEB86E21755D2C0002DA1D /* Alamofire.framework */,
+				6FEEB87021755D2C0002DA1D /* ChameleonFramework.framework */,
+				6FEEB87221755D2C0002DA1D /* FirebaseAuth.framework */,
+				6FEEB87421755D2C0002DA1D /* FirebaseCore.framework */,
+				6FEEB87621755D2C0002DA1D /* FirebaseDatabase.framework */,
+				6FEEB87821755D2C0002DA1D /* GoogleUtilities.framework */,
+				6FEEB87A21755D2C0002DA1D /* GTMSessionFetcher.framework */,
+				6FEEB87C21755D2C0002DA1D /* leveldb.framework */,
+				6FEEB87E21755D2C0002DA1D /* nanopb.framework */,
+				6FEEB88021755D2C0002DA1D /* Pods_StoreHub.framework */,
+				6FEEB88221755D2C0002DA1D /* SVProgressHUD.framework */,
+				6FEEB88421755D2C0002DA1D /* SwiftyJSON.framework */,
+				6FEEB88621755D2C0002DA1D /* TesseractOCR.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +654,20 @@
 			mainGroup = 6F5D5B86217417EE004A50A8;
 			productRefGroup = 6F5D5B90217417EE004A50A8 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6FEEB85E21755D2C0002DA1D /* Products */;
+					ProjectRef = 6FEEB85D21755D2C0002DA1D /* Pods.xcodeproj */;
+				},
+				{
+					ProductGroup = 6FEEB77E217550050002DA1D /* Products */;
+					ProjectRef = 6FEEB77D217550050002DA1D /* Pods.xcodeproj */;
+				},
+				{
+					ProductGroup = 6FEEB832217556910002DA1D /* Products */;
+					ProjectRef = 6FEEB831217556910002DA1D /* Pods.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				6F5D5B8E217417EE004A50A8 /* StoreHub */,
@@ -226,16 +675,286 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		6FEEB78D217550060002DA1D /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 6FEEB78C217550060002DA1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6FEEB78F217550060002DA1D /* ChameleonFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ChameleonFramework.framework;
+			remoteRef = 6FEEB78E217550060002DA1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6FEEB791217550060002DA1D /* FirebaseAuth.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FirebaseAuth.framework;
+			remoteRef = 6FEEB790217550060002DA1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6FEEB793217550060002DA1D /* FirebaseCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FirebaseCore.framework;
+			remoteRef = 6FEEB792217550060002DA1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6FEEB795217550060002DA1D /* FirebaseDatabase.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FirebaseDatabase.framework;
+			remoteRef = 6FEEB794217550060002DA1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6FEEB797217550060002DA1D /* GoogleUtilities.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GoogleUtilities.framework;
+			remoteRef = 6FEEB796217550060002DA1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6FEEB799217550060002DA1D /* GTMSessionFetcher.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GTMSessionFetcher.framework;
+			remoteRef = 6FEEB798217550060002DA1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6FEEB79B217550060002DA1D /* leveldb.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = leveldb.framework;
+			remoteRef = 6FEEB79A217550060002DA1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6FEEB79D217550060002DA1D /* nanopb.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = nanopb.framework;
+			remoteRef = 6FEEB79C217550060002DA1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6FEEB79F217550060002DA1D /* Pods_SimpleChatMessaging.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_SimpleChatMessaging.framework;
+			remoteRef = 6FEEB79E217550060002DA1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6FEEB7A1217550060002DA1D /* SVProgressHUD.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SVProgressHUD.framework;
+			remoteRef = 6FEEB7A0217550060002DA1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6FEEB7A3217550060002DA1D /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = 6FEEB7A2217550060002DA1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6FEEB842217556910002DA1D /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 6FEEB841217556910002DA1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6FEEB844217556910002DA1D /* ChameleonFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ChameleonFramework.framework;
+			remoteRef = 6FEEB843217556910002DA1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6FEEB846217556910002DA1D /* FirebaseAuth.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FirebaseAuth.framework;
+			remoteRef = 6FEEB845217556910002DA1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6FEEB848217556910002DA1D /* FirebaseCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FirebaseCore.framework;
+			remoteRef = 6FEEB847217556910002DA1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6FEEB84A217556910002DA1D /* FirebaseDatabase.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FirebaseDatabase.framework;
+			remoteRef = 6FEEB849217556910002DA1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6FEEB84C217556910002DA1D /* GoogleUtilities.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GoogleUtilities.framework;
+			remoteRef = 6FEEB84B217556910002DA1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6FEEB84E217556910002DA1D /* GTMSessionFetcher.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GTMSessionFetcher.framework;
+			remoteRef = 6FEEB84D217556910002DA1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6FEEB850217556910002DA1D /* leveldb.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = leveldb.framework;
+			remoteRef = 6FEEB84F217556910002DA1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6FEEB852217556910002DA1D /* nanopb.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = nanopb.framework;
+			remoteRef = 6FEEB851217556910002DA1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6FEEB854217556910002DA1D /* Pods_StoreHub.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_StoreHub.framework;
+			remoteRef = 6FEEB853217556910002DA1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6FEEB856217556910002DA1D /* SVProgressHUD.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SVProgressHUD.framework;
+			remoteRef = 6FEEB855217556910002DA1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6FEEB858217556910002DA1D /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = 6FEEB857217556910002DA1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6FEEB85A217556910002DA1D /* TesseractOCR.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = TesseractOCR.framework;
+			remoteRef = 6FEEB859217556910002DA1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6FEEB86E21755D2C0002DA1D /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 6FEEB86D21755D2C0002DA1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6FEEB87021755D2C0002DA1D /* ChameleonFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ChameleonFramework.framework;
+			remoteRef = 6FEEB86F21755D2C0002DA1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6FEEB87221755D2C0002DA1D /* FirebaseAuth.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FirebaseAuth.framework;
+			remoteRef = 6FEEB87121755D2C0002DA1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6FEEB87421755D2C0002DA1D /* FirebaseCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FirebaseCore.framework;
+			remoteRef = 6FEEB87321755D2C0002DA1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6FEEB87621755D2C0002DA1D /* FirebaseDatabase.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FirebaseDatabase.framework;
+			remoteRef = 6FEEB87521755D2C0002DA1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6FEEB87821755D2C0002DA1D /* GoogleUtilities.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GoogleUtilities.framework;
+			remoteRef = 6FEEB87721755D2C0002DA1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6FEEB87A21755D2C0002DA1D /* GTMSessionFetcher.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GTMSessionFetcher.framework;
+			remoteRef = 6FEEB87921755D2C0002DA1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6FEEB87C21755D2C0002DA1D /* leveldb.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = leveldb.framework;
+			remoteRef = 6FEEB87B21755D2C0002DA1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6FEEB87E21755D2C0002DA1D /* nanopb.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = nanopb.framework;
+			remoteRef = 6FEEB87D21755D2C0002DA1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6FEEB88021755D2C0002DA1D /* Pods_StoreHub.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_StoreHub.framework;
+			remoteRef = 6FEEB87F21755D2C0002DA1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6FEEB88221755D2C0002DA1D /* SVProgressHUD.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SVProgressHUD.framework;
+			remoteRef = 6FEEB88121755D2C0002DA1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6FEEB88421755D2C0002DA1D /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = 6FEEB88321755D2C0002DA1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6FEEB88621755D2C0002DA1D /* TesseractOCR.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = TesseractOCR.framework;
+			remoteRef = 6FEEB88521755D2C0002DA1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		6F5D5B8D217417EE004A50A8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FEEB85C217557240002DA1D /* Main.storyboard in Resources */,
 				6F5D5BA0217417EF004A50A8 /* LaunchScreen.storyboard in Resources */,
 				6F5D5B9D217417EF004A50A8 /* Assets.xcassets in Resources */,
 				6F5D5BBE21743334004A50A8 /* GoogleService-Info.plist in Resources */,
-				6F5D5B98217417EE004A50A8 /* Main.storyboard in Resources */,
 				6F5D5BB721742CAC004A50A8 /* CustomCell1CollectionViewCell.xib in Resources */,
+				6FEEB71B21753F270002DA1D /* tessdata in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +974,7 @@
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/TesseractOCRiOS/TesseractOCR.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -266,6 +986,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TesseractOCR.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -301,12 +1022,18 @@
 			files = (
 				6F5D5B9B217417EE004A50A8 /* StoreHub.xcdatamodeld in Sources */,
 				6F5D5BC021744CA4004A50A8 /* StoreListViewController.swift in Sources */,
+				6F5D5BC221744E39004A50A8 /* ModifyStoreViewController.swift in Sources */,
 				6F5D5BB621742CAC004A50A8 /* CustomCell1CollectionViewCell.swift in Sources */,
+				6F5D5BC721745168004A50A8 /* Geolocation.swift in Sources */,
 				6F5D5B95217417EE004A50A8 /* LoginViewController.swift in Sources */,
+				6F5D5BD121751F9E004A50A8 /* StoreInfoViewController.swift in Sources */,
 				6F5D5BBA217431CB004A50A8 /* FirebaseCustom.swift in Sources */,
 				6F5D5BBB217431CB004A50A8 /* UserInfo.swift in Sources */,
+				6F5D5BC42174500A004A50A8 /* Merchant.swift in Sources */,
+				6F5D5BCB21745A65004A50A8 /* Category.swift in Sources */,
 				6F5D5BB2217427E8004A50A8 /* DashboardViewController.swift in Sources */,
 				6F5D5BAD21742310004A50A8 /* SignupViewController.swift in Sources */,
+				6F5D5BCF21751ADB004A50A8 /* FindMerchantViewController.swift in Sources */,
 				6F5D5B93217417EE004A50A8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,14 +1041,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6F5D5B96217417EE004A50A8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6F5D5B97217417EE004A50A8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6F5D5B9E217417EF004A50A8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -336,6 +1055,7 @@
 		6F5D5BA2217417EF004A50A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -368,6 +1088,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -396,6 +1118,7 @@
 		6F5D5BA3217417EF004A50A8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -428,6 +1151,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -454,6 +1179,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 93CXP6R5M8;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = StoreHub/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -473,6 +1200,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 93CXP6R5M8;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = StoreHub/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

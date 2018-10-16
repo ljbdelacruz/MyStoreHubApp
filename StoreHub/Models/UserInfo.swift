@@ -38,10 +38,9 @@ class UserInfo{
         return false;
     }
     func SaveNewUserInfo(fbCustom:FirebaseCustom,  completionHandler: @escaping (Any?, Error?) -> ()){
-        var db=Database.database().reference().child("UserInfo");
-        var param:[String:Any]=["Firstname":self.Firstname, "Lastname":self.Lastname, "Email":self.Email];
-        fbCustom.InsertData(data: param, db: db, completionHandler: completionHandler)
+        let db=Database.database().reference().child("UserInfo");
+        let param:[String:Any]=["Firstname":self.Firstname, "Lastname":self.Lastname, "Email":self.Email];
+        fbCustom.InsertCustomID(id: self.Email, db: db, param: param, completionHandler: completionHandler)
     }
-    
     
 }

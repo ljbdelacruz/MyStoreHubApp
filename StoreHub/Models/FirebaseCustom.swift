@@ -56,13 +56,21 @@ class FirebaseCustom{
             }
         }
     }
+    func InsertCustomID(id:String,db:DatabaseReference, param:Any?, completionHandler: @escaping (Any?, Error?) -> ()){
+        db.child(id).setValue(param){
+            (error, resp) in
+            if error == nil{
+                completionHandler(resp, nil);
+            }else{
+                completionHandler(nil, error);
+            }
+        }
+    }
+    
     
     func RetrieveDataValue(db:DatabaseReference, completionHandler: @escaping (DataSnapshot?) -> ()){
 //        let messageDB=Database.database().reference().child(name);
-        db.observe(.childAdded, with: {
-            (response) in
-            completionHandler(response);
-        })
+        db.observe(.childAdded, with: completionHandler)
     }
     
     

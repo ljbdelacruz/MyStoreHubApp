@@ -24,6 +24,7 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         self.navigationController?.isNavigationBarHidden=false;
         // Do any additional setup after loading the view.
+        self.UIError.alpha=0;
         self.fbCustom=FirebaseCustom();
         //
         self.UIEmailTF.delegate=self;
