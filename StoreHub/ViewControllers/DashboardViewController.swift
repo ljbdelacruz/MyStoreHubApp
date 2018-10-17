@@ -8,7 +8,10 @@
 
 import UIKit
 
-class DashboardViewController: UIViewController {
+
+class DashboardViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+
+    @IBOutlet weak var UIMostBought: UICollectionView!
     var fbCustom:FirebaseCustom?;
     var items=[1,2,3,4,5,6,7,8,9];
     override func viewDidLoad() {
@@ -20,14 +23,14 @@ class DashboardViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     //collection view
-//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        return self.items.count;
-//    }
-//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        let cell=collectionView.dequeueReusableCell(withReuseIdentifier: "customCell1", for: indexPath) as! CustomCell1CollectionViewCell
-//        cell.UIProduct.text! = ""+String(self.items[indexPath.row]);
-//        return cell;
-//    }
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return self.items.count;
+    }
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell=collectionView.dequeueReusableCell(withReuseIdentifier: "customCell1", for: indexPath) as! CustomCell1CollectionViewCell
+        cell.UIProduct.text! = ""+String(self.items[indexPath.row]);
+        return cell;
+    }
     @IBAction func OnLogoutClick(_ sender: Any) {
         self.fbCustom?.Logout(completionHandler: {
             (isSuccess) in

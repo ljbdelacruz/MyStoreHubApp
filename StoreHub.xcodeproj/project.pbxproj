@@ -26,12 +26,29 @@
 		6F5D5BCB21745A65004A50A8 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5D5BCA21745A65004A50A8 /* Category.swift */; };
 		6F5D5BCF21751ADB004A50A8 /* FindMerchantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5D5BCE21751ADB004A50A8 /* FindMerchantViewController.swift */; };
 		6F5D5BD121751F9E004A50A8 /* StoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5D5BD021751F9E004A50A8 /* StoreInfoViewController.swift */; };
+		6F93B9172177235500A23E65 /* Pods_StoreHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FEEB854217556910002DA1D /* Pods_StoreHub.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6F93B9182177235500A23E65 /* Pods_StoreHub.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6FEEB854217556910002DA1D /* Pods_StoreHub.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6F93B9382177259600A23E65 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FEEB78D217550060002DA1D /* Alamofire.framework */; };
+		6F93B939217725A600A23E65 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6FEEB78D217550060002DA1D /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6FEEB71B21753F270002DA1D /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 6FEEB71A21753F260002DA1D /* tessdata */; };
 		6FEEB85C217557240002DA1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FEEB85B217557240002DA1D /* Main.storyboard */; };
-		77B201D81845D81CF77EA6E8 /* Pods_StoreHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63249111D5C3C2A5F1FDC58 /* Pods_StoreHub.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		6F93B9192177235500A23E65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FEEB831217556910002DA1D /* Pods.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 635B6EB38F6D5D35DBE236804A055FC2;
+			remoteInfo = "Pods-StoreHub";
+		};
+		6F93B9362177257A00A23E65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FEEB77D217550050002DA1D /* Pods.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
+			remoteInfo = Alamofire;
+		};
 		6FEEB78C217550060002DA1D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6FEEB77D217550050002DA1D /* Pods.xcodeproj */;
@@ -207,100 +224,25 @@
 			remoteGlobalIDString = CDD489FEB4181CDDFD0E69D50C148CA6;
 			remoteInfo = TesseractOCRiOS;
 		};
-		6FEEB86D21755D2C0002DA1D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6FEEB85D21755D2C0002DA1D /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = CF11C65B2AB2917764FB07B6D202BBF9;
-			remoteInfo = Alamofire;
-		};
-		6FEEB86F21755D2C0002DA1D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6FEEB85D21755D2C0002DA1D /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3610A217F381936309CD3F846AA81C27;
-			remoteInfo = ChameleonFramework;
-		};
-		6FEEB87121755D2C0002DA1D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6FEEB85D21755D2C0002DA1D /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 0C10ACB5156D38AE4CFBC16A539DEA3F;
-			remoteInfo = FirebaseAuth;
-		};
-		6FEEB87321755D2C0002DA1D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6FEEB85D21755D2C0002DA1D /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 2F622A3F3497C65F20115BF34BA44E7F;
-			remoteInfo = FirebaseCore;
-		};
-		6FEEB87521755D2C0002DA1D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6FEEB85D21755D2C0002DA1D /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4500B27B417E37D6EB553DDD949D1E0A;
-			remoteInfo = FirebaseDatabase;
-		};
-		6FEEB87721755D2C0002DA1D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6FEEB85D21755D2C0002DA1D /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1F1C93E0BDA5516DABDC6F9CA3F128A5;
-			remoteInfo = GoogleUtilities;
-		};
-		6FEEB87921755D2C0002DA1D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6FEEB85D21755D2C0002DA1D /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 65039F987F5C7E50CAA8F35228891504;
-			remoteInfo = GTMSessionFetcher;
-		};
-		6FEEB87B21755D2C0002DA1D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6FEEB85D21755D2C0002DA1D /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1F51C3302B3B8A78C6107385404B9C6D;
-			remoteInfo = "leveldb-library";
-		};
-		6FEEB87D21755D2C0002DA1D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6FEEB85D21755D2C0002DA1D /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = FEFFC49165565E53917367B0D563FC29;
-			remoteInfo = nanopb;
-		};
-		6FEEB87F21755D2C0002DA1D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6FEEB85D21755D2C0002DA1D /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 44AF3FCE3875576EA5412885B857444C;
-			remoteInfo = "Pods-StoreHub";
-		};
-		6FEEB88121755D2C0002DA1D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6FEEB85D21755D2C0002DA1D /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 0553BC4BC194D7430C8F0F74997BC642;
-			remoteInfo = SVProgressHUD;
-		};
-		6FEEB88321755D2C0002DA1D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6FEEB85D21755D2C0002DA1D /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 833C2D972D14EEE0E373ABD6E51F1751;
-			remoteInfo = SwiftyJSON;
-		};
-		6FEEB88521755D2C0002DA1D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6FEEB85D21755D2C0002DA1D /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = CDD489FEB4181CDDFD0E69D50C148CA6;
-			remoteInfo = TesseractOCRiOS;
-		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6F93B91B2177235500A23E65 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6F93B939217725A600A23E65 /* Alamofire.framework in Embed Frameworks */,
+				6F93B9182177235500A23E65 /* Pods_StoreHub.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0272611F28CD059FB7A97613 /* Pods-StoreHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreHub.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StoreHub/Pods-StoreHub.debug.xcconfig"; sourceTree = "<group>"; };
 		6F5D5B8F217417EE004A50A8 /* StoreHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoreHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F5D5B92217417EE004A50A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F5D5B94217417EE004A50A8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -354,10 +296,8 @@
 		6FEEB82F2175566F0002DA1D /* StoreHub */ = {isa = PBXFileReference; lastKnownFileType = folder; path = StoreHub; sourceTree = "<group>"; };
 		6FEEB831217556910002DA1D /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		6FEEB85B217557240002DA1D /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		6FEEB85D21755D2C0002DA1D /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
-		72A79E759EA11E3EE4181CCD /* Pods-StoreHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreHub.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StoreHub/Pods-StoreHub.debug.xcconfig"; sourceTree = "<group>"; };
-		B5CB320F2160930E89EB3373 /* Pods-StoreHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreHub.release.xcconfig"; path = "Pods/Target Support Files/Pods-StoreHub/Pods-StoreHub.release.xcconfig"; sourceTree = "<group>"; };
-		B63249111D5C3C2A5F1FDC58 /* Pods_StoreHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StoreHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83328270EE72D30C2747677D /* Pods-StoreHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreHub.release.xcconfig"; path = "Pods/Target Support Files/Pods-StoreHub/Pods-StoreHub.release.xcconfig"; sourceTree = "<group>"; };
+		9969C2AC9354195037DE3ABC /* Pods_StoreHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StoreHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -365,22 +305,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77B201D81845D81CF77EA6E8 /* Pods_StoreHub.framework in Frameworks */,
+				6F93B9382177259600A23E65 /* Alamofire.framework in Frameworks */,
+				6F93B9172177235500A23E65 /* Pods_StoreHub.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		291FA009BB2744B7F880F88C /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				72A79E759EA11E3EE4181CCD /* Pods-StoreHub.debug.xcconfig */,
-				B5CB320F2160930E89EB3373 /* Pods-StoreHub.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		46644C63BCCFEB4ED4D58755 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -413,7 +345,7 @@
 				6FEEB7322175412A0002DA1D /* libstdc++.tbd */,
 				6F5D5BFC217536A4004A50A8 /* CoreImage.framework */,
 				6F5D5BF82175367D004A50A8 /* libstdc++.6.tbd */,
-				B63249111D5C3C2A5F1FDC58 /* Pods_StoreHub.framework */,
+				9969C2AC9354195037DE3ABC /* Pods_StoreHub.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -422,11 +354,10 @@
 			isa = PBXGroup;
 			children = (
 				6FEEB77D217550050002DA1D /* Pods.xcodeproj */,
-				6FEEB85D21755D2C0002DA1D /* Pods.xcodeproj */,
 				6F5D5B91217417EE004A50A8 /* StoreHub */,
 				6F5D5B90217417EE004A50A8 /* Products */,
-				291FA009BB2744B7F880F88C /* Pods */,
 				46644C63BCCFEB4ED4D58755 /* Frameworks */,
+				EC8813B5081C2BEC513C629F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -441,6 +372,7 @@
 		6F5D5B91217417EE004A50A8 /* StoreHub */ = {
 			isa = PBXGroup;
 			children = (
+				6F93B8422176B01C00A23E65 /* CData */,
 				6FEEB71721753DE60002DA1D /* Supporting Files */,
 				6F5D5BAF217425CA004A50A8 /* Protocols */,
 				6F5D5BAE2174251C004A50A8 /* CustomStyle */,
@@ -452,7 +384,6 @@
 				6F5D5B9E217417EF004A50A8 /* LaunchScreen.storyboard */,
 				6F5D5BA1217417EF004A50A8 /* Info.plist */,
 				6F5D5BBD21743334004A50A8 /* GoogleService-Info.plist */,
-				6F5D5B99217417EE004A50A8 /* StoreHub.xcdatamodeld */,
 			);
 			path = StoreHub;
 			sourceTree = "<group>";
@@ -539,6 +470,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		6F93B8422176B01C00A23E65 /* CData */ = {
+			isa = PBXGroup;
+			children = (
+				6F5D5B99217417EE004A50A8 /* StoreHub.xcdatamodeld */,
+			);
+			path = CData;
+			sourceTree = "<group>";
+		};
 		6FEEB71721753DE60002DA1D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -586,24 +525,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6FEEB85E21755D2C0002DA1D /* Products */ = {
+		EC8813B5081C2BEC513C629F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6FEEB86E21755D2C0002DA1D /* Alamofire.framework */,
-				6FEEB87021755D2C0002DA1D /* ChameleonFramework.framework */,
-				6FEEB87221755D2C0002DA1D /* FirebaseAuth.framework */,
-				6FEEB87421755D2C0002DA1D /* FirebaseCore.framework */,
-				6FEEB87621755D2C0002DA1D /* FirebaseDatabase.framework */,
-				6FEEB87821755D2C0002DA1D /* GoogleUtilities.framework */,
-				6FEEB87A21755D2C0002DA1D /* GTMSessionFetcher.framework */,
-				6FEEB87C21755D2C0002DA1D /* leveldb.framework */,
-				6FEEB87E21755D2C0002DA1D /* nanopb.framework */,
-				6FEEB88021755D2C0002DA1D /* Pods_StoreHub.framework */,
-				6FEEB88221755D2C0002DA1D /* SVProgressHUD.framework */,
-				6FEEB88421755D2C0002DA1D /* SwiftyJSON.framework */,
-				6FEEB88621755D2C0002DA1D /* TesseractOCR.framework */,
+				0272611F28CD059FB7A97613 /* Pods-StoreHub.debug.xcconfig */,
+				83328270EE72D30C2747677D /* Pods-StoreHub.release.xcconfig */,
 			);
-			name = Products;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -613,15 +541,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6F5D5BA4217417EF004A50A8 /* Build configuration list for PBXNativeTarget "StoreHub" */;
 			buildPhases = (
-				D9E2A16718F150F468AB1612 /* [CP] Check Pods Manifest.lock */,
+				B171F3289C4A73CE53469921 /* [CP] Check Pods Manifest.lock */,
 				6F5D5B8B217417EE004A50A8 /* Sources */,
 				6F5D5B8C217417EE004A50A8 /* Frameworks */,
 				6F5D5B8D217417EE004A50A8 /* Resources */,
-				9F25ECE0D65B5095E33F48C9 /* [CP] Embed Pods Frameworks */,
+				C0308AB27225D91EA7351597 /* [CP] Embed Pods Frameworks */,
+				6F93B91B2177235500A23E65 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6F93B9372177257A00A23E65 /* PBXTargetDependency */,
+				6F93B91A2177235500A23E65 /* PBXTargetDependency */,
 			);
 			name = StoreHub;
 			productName = StoreHub;
@@ -655,10 +586,6 @@
 			productRefGroup = 6F5D5B90217417EE004A50A8 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
-				{
-					ProductGroup = 6FEEB85E21755D2C0002DA1D /* Products */;
-					ProjectRef = 6FEEB85D21755D2C0002DA1D /* Pods.xcodeproj */;
-				},
 				{
 					ProductGroup = 6FEEB77E217550050002DA1D /* Products */;
 					ProjectRef = 6FEEB77D217550050002DA1D /* Pods.xcodeproj */;
@@ -851,97 +778,6 @@
 			remoteRef = 6FEEB859217556910002DA1D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		6FEEB86E21755D2C0002DA1D /* Alamofire.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Alamofire.framework;
-			remoteRef = 6FEEB86D21755D2C0002DA1D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6FEEB87021755D2C0002DA1D /* ChameleonFramework.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ChameleonFramework.framework;
-			remoteRef = 6FEEB86F21755D2C0002DA1D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6FEEB87221755D2C0002DA1D /* FirebaseAuth.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = FirebaseAuth.framework;
-			remoteRef = 6FEEB87121755D2C0002DA1D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6FEEB87421755D2C0002DA1D /* FirebaseCore.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = FirebaseCore.framework;
-			remoteRef = 6FEEB87321755D2C0002DA1D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6FEEB87621755D2C0002DA1D /* FirebaseDatabase.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = FirebaseDatabase.framework;
-			remoteRef = 6FEEB87521755D2C0002DA1D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6FEEB87821755D2C0002DA1D /* GoogleUtilities.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = GoogleUtilities.framework;
-			remoteRef = 6FEEB87721755D2C0002DA1D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6FEEB87A21755D2C0002DA1D /* GTMSessionFetcher.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = GTMSessionFetcher.framework;
-			remoteRef = 6FEEB87921755D2C0002DA1D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6FEEB87C21755D2C0002DA1D /* leveldb.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = leveldb.framework;
-			remoteRef = 6FEEB87B21755D2C0002DA1D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6FEEB87E21755D2C0002DA1D /* nanopb.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = nanopb.framework;
-			remoteRef = 6FEEB87D21755D2C0002DA1D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6FEEB88021755D2C0002DA1D /* Pods_StoreHub.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Pods_StoreHub.framework;
-			remoteRef = 6FEEB87F21755D2C0002DA1D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6FEEB88221755D2C0002DA1D /* SVProgressHUD.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SVProgressHUD.framework;
-			remoteRef = 6FEEB88121755D2C0002DA1D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6FEEB88421755D2C0002DA1D /* SwiftyJSON.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SwiftyJSON.framework;
-			remoteRef = 6FEEB88321755D2C0002DA1D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6FEEB88621755D2C0002DA1D /* TesseractOCR.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = TesseractOCR.framework;
-			remoteRef = 6FEEB88521755D2C0002DA1D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -961,7 +797,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9F25ECE0D65B5095E33F48C9 /* [CP] Embed Pods Frameworks */ = {
+		B171F3289C4A73CE53469921 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StoreHub-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0308AB27225D91EA7351597 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -995,24 +849,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StoreHub/Pods-StoreHub-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D9E2A16718F150F468AB1612 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-StoreHub-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1039,6 +875,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6F93B91A2177235500A23E65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-StoreHub";
+			targetProxy = 6F93B9192177235500A23E65 /* PBXContainerItemProxy */;
+		};
+		6F93B9372177257A00A23E65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			targetProxy = 6F93B9362177257A00A23E65 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6F5D5B9E217417EF004A50A8 /* LaunchScreen.storyboard */ = {
@@ -1174,7 +1023,7 @@
 		};
 		6F5D5BA5217417EF004A50A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72A79E759EA11E3EE4181CCD /* Pods-StoreHub.debug.xcconfig */;
+			baseConfigurationReference = 0272611F28CD059FB7A97613 /* Pods-StoreHub.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -1195,7 +1044,7 @@
 		};
 		6F5D5BA6217417EF004A50A8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B5CB320F2160930E89EB3373 /* Pods-StoreHub.release.xcconfig */;
+			baseConfigurationReference = 83328270EE72D30C2747677D /* Pods-StoreHub.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

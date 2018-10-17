@@ -40,15 +40,14 @@ class FindMerchantViewController: UIViewController, G8TesseractDelegate, UIImage
     //get image of words and extract it
     var textRecognize:String?;
     func RecognizeImage(image:UIImage){
-        SVProgressHUD.show();
         self.tesseract?.image=image.g8_blackAndWhite();
         self.tesseract?.recognize();
         self.UICodeTF.text=self.tesseract?.recognizedText;
         self.merchantInfo?.GetByMerchantID(id: (self.tesseract?.recognizedText!)!, fbCustom: self.fbCustom!, completionHandler: {
             (resp, err) in
             if err == nil{
-                SVProgressHUD.dismiss()
                 self.performSegue(withIdentifier: "findMerchantToStoreInfo", sender: nil);
+            }else{
             }
         })
     }

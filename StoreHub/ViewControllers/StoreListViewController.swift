@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import CoreData
 
-class StoreListViewController: UIViewController {
+class StoreListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
-    override func viewDidLoad() {
+    var myStores:[NSManagedObject]=[];
+    
+    override func viewDidLoad(){
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.navigationController?.isNavigationBarHidden=false;
@@ -20,8 +23,14 @@ class StoreListViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    override func viewWillDisappear(_ animated: Bool) {
-        self.navigationController?.isNavigationBarHidden=true;
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.myStores.count;
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        cell.textLabel?.text = self.myStores[indexPath.row].value(forKeyPath: "name") as? String
+        return cell;
     }
     
 }

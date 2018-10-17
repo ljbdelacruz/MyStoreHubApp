@@ -15,6 +15,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var UIPassword: UITextField!
     @IBOutlet weak var UIError: UILabel!
     @IBOutlet weak var UIDoneBtn: UIButton!
+    @IBOutlet weak var UILoginBtn: UIButton!
+    @IBOutlet weak var UISignupBtn: UIButton!
+    
+    var loginPersist=UserDefaults();
+    
     
     var fbCustom:FirebaseCustom=FirebaseCustom();
     override func viewDidLoad() {
@@ -24,6 +29,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         self.UIPassword.delegate=self;
         self.UIError.alpha=0;
         self.UIDoneBtn.alpha=0;
+        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -32,6 +38,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBAction func OnLoginClick(_ sender: Any) {
         self.fbCustom.userInfo?.set(email: self.UIEmail.text!, pass: self.UIPassword.text!, fname: "", lname: "")
         SVProgressHUD.show();
+        self.ToggleInputs();
         self.fbCustom.AuthUser(completionHandler: {
             (response, error) in
             if error == nil{
@@ -40,9 +47,17 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 self.UIError.alpha=1;
                 self.UIError.text=error?.localizedDescription
             }
+            self.ToggleInputs();
             SVProgressHUD.dismiss();
         })
     }
+    func ToggleInputs(){
+        self.UIEmail.isEnabled = !self.UIEmail.isEnabled;
+        self.UIPassword.isEnabled = !self.UIPassword.isEnabled;
+        self.UILoginBtn.isEnabled = !self.UILoginBtn.isEnabled;
+        self.UISignupBtn.isEnabled = !self.UISignupBtn.isEnabled;
+    }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "loginToDashboard"{

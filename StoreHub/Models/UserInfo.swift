@@ -9,10 +9,9 @@
 import Foundation
 import Firebase;
 
-
-
 class UserInfo{
     public var Email, Password, Firstname, Lastname:String
+    
     init(){
         self.Email="";
         self.Password="";

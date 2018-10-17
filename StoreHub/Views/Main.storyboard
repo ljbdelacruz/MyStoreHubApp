@@ -79,7 +79,9 @@
                         <outlet property="UIDoneBtn" destination="Tzv-hU-tjL" id="F09-95-5JO"/>
                         <outlet property="UIEmail" destination="ABZ-74-8L3" id="orj-Q3-VZ5"/>
                         <outlet property="UIError" destination="ine-aE-5Gl" id="3P1-0b-5TW"/>
+                        <outlet property="UILoginBtn" destination="5Ly-pz-Sun" id="KYi-zt-5xm"/>
                         <outlet property="UIPassword" destination="oxq-bs-eUX" id="oAH-NJ-TfX"/>
+                        <outlet property="UISignupBtn" destination="W81-qf-bsO" id="30u-qk-jXn"/>
                         <segue destination="4sc-LZ-aT1" kind="show" identifier="loginToDashboard" id="TEH-rG-lKr"/>
                     </connections>
                 </viewController>
@@ -94,6 +96,37 @@
                     <view key="view" contentMode="scaleToFill" id="5um-LB-NYf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oV-EV-wKb">
+                                <rect key="frame" x="16" y="64" width="182" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="MERCHANT ACCOUNT"/>
+                                <connections>
+                                    <segue destination="wg6-F8-Ewi" kind="show" identifier="dashboardToMerchantList" id="ZeQ-9h-N5h"/>
+                                </connections>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KXr-10-zA9">
+                                <rect key="frame" x="0.0" y="171" width="375" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Cdj-at-tbO">
+                                    <size key="itemSize" width="77" height="70"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="OCo-iA-xjB">
+                                        <rect key="frame" x="0.0" y="0.0" width="77" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="77" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="hSi-Il-5je"/>
                     </view>
@@ -122,10 +155,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="UIMostBought" destination="KXr-10-zA9" id="iNJ-fG-48R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Om-sf-CCc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-377" y="411"/>
+            <point key="canvasLocation" x="-378.39999999999998" y="410.64467766116945"/>
         </scene>
         <!--Find Merchant View Controller-->
         <scene sceneID="a0K-Ub-6Qi">
@@ -170,7 +206,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4WH-JQ-Kl6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="471" y="411"/>
+            <point key="canvasLocation" x="330" y="411"/>
         </scene>
         <!--Store Info View Controller-->
         <scene sceneID="sET-cu-huQ">
@@ -252,7 +288,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TEl-Eh-bQz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1301.5999999999999" y="410.64467766116945"/>
+            <point key="canvasLocation" x="1049" y="411"/>
         </scene>
         <!--Signup View Controller-->
         <scene sceneID="dmK-jA-DBh">
@@ -340,6 +376,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Um-bw-5VL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1087.2" y="1132.9835082458771"/>
+        </scene>
+        <!--Store List View Controller-->
+        <scene sceneID="Zz3-vK-i4w">
+            <objects>
+                <viewController id="wg6-F8-Ewi" customClass="StoreListViewController" customModule="StoreHub" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4hW-gL-9iy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XoX-9f-T3x">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="Yiw-og-8Zo">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yiw-og-8Zo" id="WTw-Tw-Nwb">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="bks-Nc-qWy"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Q6Z-SG-hfA">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="anF-ir-wLX">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vPY-EL-PZm">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ADD"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QG3-zI-Izp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-378.39999999999998" y="1132.9835082458771"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Kt7-aP-TgS">

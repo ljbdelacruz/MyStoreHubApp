@@ -59,6 +59,17 @@ class Merchant:Geolocation{
         })
     }
     
+    static func setupSingle(data:DataSnapshot)->(Merchant){
+        let dict=data as! Dictionary<String, Any>;
+        var temp=Merchant();
+//        temp.set(id: "", oid: String(dict["OwnerID"]), name: String(dict["Name"]!), respRate: Float(dict["ResponseRate"]), revRate: dict["ReviewRate"], prodCount: Int(dict["ProductCount"]))
+        return temp;
+    }
+    static func setupMultiple(data:DataSnapshot){
+        
+    }
+    
+    
     
     
     
